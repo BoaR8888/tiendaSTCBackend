@@ -40,8 +40,20 @@ public class Usuario {
 	 @Min(value = 1, message = "El estado mínimo es 1")
 	 @Max(value = 2, message = "El estado máximo es 2")
 	 private Integer estado = 1;
+	 
+	 private String token;
 
-	 //GET AND SET
+
+
+	//GET AND SET
+	 public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+	
 	public Long getIdUsuario() {
 		return idUsuario;
 	}
